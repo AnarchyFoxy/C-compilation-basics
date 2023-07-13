@@ -3,6 +3,10 @@
 	.section	.rodata
 .LC0:
 	.string	"Hello, Anarchy Foxy World!"
+.LC1:
+	.string	"It is time for Embedded C"
+.LC2:
+	.string	"\nThus spoke Anarchy Foxy"
 	.text
 	.globl	main
 	.type	main, @function
@@ -15,6 +19,10 @@ main:
 	movq	%rsp, %rbp
 	.cfi_def_cfa_register 6
 	movl	$.LC0, %edi
+	call	puts
+	movl	$.LC1, %edi
+	call	puts
+	movl	$.LC2, %edi
 	call	puts
 	movl	$0, %eax
 	popq	%rbp

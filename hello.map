@@ -165,7 +165,7 @@ LOAD /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crtn.o
 .plt.sec
  *(.plt.sec)
 
-.text           0x0000000000401040      0x11b
+.text           0x0000000000401040      0x12f
  *(.text.unlikely .text.*_unlikely .text.unlikely.*)
  *(.text.exit .text.exit.*)
  *(.text.startup .text.startup.*)
@@ -178,54 +178,54 @@ LOAD /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crtn.o
  .text          0x0000000000401095        0x0 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crti.o
  *fill*         0x0000000000401095        0xb 
  .text          0x00000000004010a0       0xa6 /usr/lib64/gcc/x86_64-suse-linux/13/crtbegin.o
- .text          0x0000000000401146       0x15 hello.o
+ .text          0x0000000000401146       0x29 hello.o
                 0x0000000000401146                main
- .text          0x000000000040115b        0x0 /usr/lib64/gcc/x86_64-suse-linux/13/crtend.o
- .text          0x000000000040115b        0x0 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crtn.o
+ .text          0x000000000040116f        0x0 /usr/lib64/gcc/x86_64-suse-linux/13/crtend.o
+ .text          0x000000000040116f        0x0 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crtn.o
  *(.gnu.warning)
 
-.fini           0x000000000040115c        0xd
+.fini           0x0000000000401170        0xd
  *(SORT_NONE(.fini))
- .fini          0x000000000040115c        0x8 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crti.o
-                0x000000000040115c                _fini
- .fini          0x0000000000401164        0x5 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crtn.o
+ .fini          0x0000000000401170        0x8 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crti.o
+                0x0000000000401170                _fini
+ .fini          0x0000000000401178        0x5 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crtn.o
                 [!provide]                        PROVIDE (__etext = .)
                 [!provide]                        PROVIDE (_etext = .)
                 [!provide]                        PROVIDE (etext = .)
                 0x0000000000402000                . = ALIGN (CONSTANT (MAXPAGESIZE))
                 0x0000000000402000                . = SEGMENT_START ("rodata-segment", (ALIGN (CONSTANT (MAXPAGESIZE)) + (. & (CONSTANT (MAXPAGESIZE) - 0x1))))
 
-.rodata         0x0000000000402000       0x1f
+.rodata         0x0000000000402000       0x52
  *(.rodata .rodata.* .gnu.linkonce.r.*)
  .rodata.cst4   0x0000000000402000        0x4 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crt1.o
                 0x0000000000402000                _IO_stdin_used
- .rodata        0x0000000000402004       0x1b hello.o
+ .rodata        0x0000000000402004       0x4e hello.o
 
 .rodata1
  *(.rodata1)
 
-.eh_frame_hdr   0x0000000000402020       0x2c
+.eh_frame_hdr   0x0000000000402054       0x2c
  *(.eh_frame_hdr)
- .eh_frame_hdr  0x0000000000402020       0x2c /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crt1.o
-                0x0000000000402020                __GNU_EH_FRAME_HDR
+ .eh_frame_hdr  0x0000000000402054       0x2c /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crt1.o
+                0x0000000000402054                __GNU_EH_FRAME_HDR
  *(.eh_frame_entry .eh_frame_entry.*)
 
-.eh_frame       0x0000000000402050       0x8c
+.eh_frame       0x0000000000402080       0x8c
  *(.eh_frame)
- .eh_frame      0x0000000000402050       0x40 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crt1.o
+ .eh_frame      0x0000000000402080       0x40 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crt1.o
                                          0x5c (size before relaxing)
- *fill*         0x0000000000402090        0x0 
- .eh_frame      0x0000000000402090       0x28 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crt1.o
+ *fill*         0x00000000004020c0        0x0 
+ .eh_frame      0x00000000004020c0       0x28 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crt1.o
                                          0x40 (size before relaxing)
- .eh_frame      0x00000000004020b8        0x0 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crt1.o
- .eh_frame      0x00000000004020b8       0x20 hello.o
+ .eh_frame      0x00000000004020e8        0x0 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crt1.o
+ .eh_frame      0x00000000004020e8       0x20 hello.o
                                          0x38 (size before relaxing)
- .eh_frame      0x00000000004020d8        0x4 /usr/lib64/gcc/x86_64-suse-linux/13/crtend.o
+ .eh_frame      0x0000000000402108        0x4 /usr/lib64/gcc/x86_64-suse-linux/13/crtend.o
  *(.eh_frame.*)
 
-.sframe         0x00000000004020dc        0x0
+.sframe         0x000000000040210c        0x0
  *(.sframe)
- .sframe        0x00000000004020dc        0x0 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crt1.o
+ .sframe        0x000000000040210c        0x0 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crt1.o
  *(.sframe.*)
 
 .gcc_except_table
@@ -419,53 +419,46 @@ LOAD /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crtn.o
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x0000000000000000      0x150
+.debug_aranges  0x0000000000000000      0x120
  *(.debug_aranges)
  .debug_aranges
                 0x0000000000000000       0xa0 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crt1.o
  .debug_aranges
                 0x00000000000000a0       0x40 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crti.o
  .debug_aranges
-                0x00000000000000e0       0x30 hello.o
- .debug_aranges
-                0x0000000000000110       0x40 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crtn.o
+                0x00000000000000e0       0x40 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crtn.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000      0xa25
+.debug_info     0x0000000000000000      0x999
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x0000000000000000      0x953 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crt1.o
  .debug_info    0x0000000000000953       0x23 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crti.o
- .debug_info    0x0000000000000976       0x8c hello.o
- .debug_info    0x0000000000000a02       0x23 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crtn.o
+ .debug_info    0x0000000000000976       0x23 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crtn.o
 
-.debug_abbrev   0x0000000000000000      0x2d9
+.debug_abbrev   0x0000000000000000      0x296
  *(.debug_abbrev)
  .debug_abbrev  0x0000000000000000      0x272 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crt1.o
  .debug_abbrev  0x0000000000000272       0x12 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crti.o
- .debug_abbrev  0x0000000000000284       0x43 hello.o
- .debug_abbrev  0x00000000000002c7       0x12 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crtn.o
+ .debug_abbrev  0x0000000000000284       0x12 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crtn.o
 
-.debug_line     0x0000000000000000      0x2a2
+.debug_line     0x0000000000000000      0x250
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x0000000000000000      0x187 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crt1.o
  .debug_line    0x0000000000000187       0x67 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crti.o
- .debug_line    0x00000000000001ee       0x52 hello.o
- .debug_line    0x0000000000000240       0x62 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crtn.o
+ .debug_line    0x00000000000001ee       0x62 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crtn.o
 
 .debug_frame
  *(.debug_frame)
 
-.debug_str      0x0000000000000000      0x705
+.debug_str      0x0000000000000000      0x694
  *(.debug_str)
  .debug_str     0x0000000000000000      0x662 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crt1.o
                                         0xab7 (size before relaxing)
  .debug_str     0x0000000000000662       0x19 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crti.o
                                          0x52 (size before relaxing)
- .debug_str     0x000000000000067b       0x71 hello.o
-                                         0xd5 (size before relaxing)
- .debug_str     0x00000000000006ec       0x19 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crtn.o
+ .debug_str     0x000000000000067b       0x19 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crtn.o
                                          0x52 (size before relaxing)
 
 .debug_loc
@@ -496,7 +489,7 @@ LOAD /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crtn.o
  *(.debug_addr)
 
 .debug_line_str
-                0x0000000000000000      0x18e
+                0x0000000000000000      0x144
  *(.debug_line_str)
  .debug_line_str
                 0x0000000000000000      0x136 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crt1.o
@@ -505,10 +498,7 @@ LOAD /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crtn.o
                 0x0000000000000136        0x7 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crti.o
                                          0x44 (size before relaxing)
  .debug_line_str
-                0x000000000000013d       0x4a hello.o
-                                         0x9c (size before relaxing)
- .debug_line_str
-                0x0000000000000187        0x7 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crtn.o
+                0x000000000000013d        0x7 /usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/crtn.o
                                          0x44 (size before relaxing)
 
 .debug_loclists
