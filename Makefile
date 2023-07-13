@@ -1,4 +1,4 @@
-CFLAGS=-gdb -Wall Wextra
+CFLAGS=-ggdb -Wall -Wextra
 
 all: hello
 
